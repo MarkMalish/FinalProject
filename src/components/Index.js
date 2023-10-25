@@ -64,7 +64,7 @@ export default function Index() {
        <div className="container">
            <div className="intro__inner">
                <h2 className="intro__suptitle">This is the</h2>
-         <h1 className="intro__title">Main Page</h1>
+         <h1 className="intro__title">Welcome Page</h1>
                
                <ScrollLink className="butn" to="about" smooth={true} duration={500} id="scroll-btn" data-scroll="#about" href="#">Read more</ScrollLink>
           

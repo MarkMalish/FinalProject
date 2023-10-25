@@ -38,7 +38,6 @@ const Home = () => {
 }, []);
 
   return (
-    <div className='home'>
     <div className='welcome'>
     <header className="header" id="header">
       <div className="container">
@@ -47,15 +46,12 @@ const Home = () => {
             <ScrollLink to="intro" smooth={true} duration={500}>Parter</ScrollLink>
           </div>
 
-          <nav className="nav" id="nav">
+          <nav class="nav" id="nav">
             <ScrollLink className="nav__link" to="about" smooth={true} duration={500}>About Us</ScrollLink>
             <ScrollLink className="nav__link" to="assortment" smooth={true} duration={500}>Events</ScrollLink>
             <ScrollLink className="nav__link" to="delivery" smooth={true} duration={500}>Application</ScrollLink>
             <ScrollLink className="nav__link" to="footer" smooth={true} duration={500}>Contacts</ScrollLink>
-           
-            <RouterLink className="nav__link" to="/addevent">Add Event</RouterLink>
-
-            <RouterLink className="nav__link" to="/">Log Out</RouterLink>
+            <RouterLink className="nav__link" to="/login">Log Out</RouterLink>
           </nav>
 
           <button className="nav-toggle" id="navtoggle" type="button">
@@ -64,8 +60,24 @@ const Home = () => {
         </div>
       </div>
     </header>
+
+
+   
+      <div className="intro" id="intro">
+     <div className="container">
+         <div className="intro__inner">
+             <h2 className="intro__suptitle">This is the</h2>
+       <h1 className="intro__title">Page after login</h1>
+             
+             <ScrollLink className="butn" to="about" smooth={true} duration={500} id="scroll-btn" data-scroll="#about" href="#">Read more</ScrollLink>
+        
+        
+             
+         </div> 
+     </div> 
+   </div>  
     </div>
-</div>
+  
     );
 };
 
